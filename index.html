@@ -1,49 +1,103 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>AWS Serverles</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section
+                data-background="https://dome9.com/wp-content/uploads/2017/09/Screen-Shot-2017-09-01-at-12.15.24-PM.png">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        </section>
+        <section data-transition="slide" data-background="#C2B990" data-background-transition="zoom">
+            <h2>Historique</h2>
+        </section>
+        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+            <section>
+                <h2>AWS Serverless Stack</h2>
+                <p>
+                    Lambda - DynamoDB - API Gateway - S3
+                </p>
+            </section>
+            <section>
+                <h2>Lambda</h2>
+            </section>
+            <section>
+                <h2>DynamoDB</h2>
+            </section>
+            <section>
+                <h2>API Gateway</h2>
+            </section>
+            <section>
+                <h2>S3</h2>
+            </section>
+        </section>
+        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+            <section>
+                <h2>And some more</h2>
+            </section>
+            <section>
+                <h2>Cognito</h2>
+            </section>
+            <section>
+                <h2>CloudWatch</h2>
+            </section>
+        </section>
+        <section data-transition="slide" data-background="#425908" data-background-transition="zoom">
+            <h2>Exemples</h2>
+        </section>
+        <section data-transition="slide" data-background="#DA9E40" data-background-transition="zoom">
+            <h2>Pros - Cons</h2>
+        </section>
+        <section data-transition="slide" data-background="#360012" data-background-transition="zoom">
+            <h2>Questions</h2>
+        </section>
+        <section data-transition="slide" data-background-transition="zoom"
+                data-background="https://www.babelio.com/users/AVT_Jacques-Chirac_9270.jpg"></section>
+        <section data-transition="slide" data-background="#3E81D4" data-background-transition="zoom">
+            <h2>Demos</h2>
+        </section>
+    </div>
+</div>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
